@@ -1,6 +1,13 @@
 name: Deploy Ubuntu VM
 on:
   workflow_dispatch:
+
+    inputs:
+      admin_password:
+        description: 'Enter admin password'
+        required: true
+        type: password
+        
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
