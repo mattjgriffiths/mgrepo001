@@ -4,7 +4,7 @@ param adminUsername string = '00000001'
 @description('Password for the Virtual Machine.')
 @minLength(12)
 @secure()
-param adminPassword string = 'Qwertyuiop!
+param adminPassword string = 'Qwertyuiop!'
 
 @description('Unique DNS Name for the Public IP used to access the Virtual Machine.')
 param dnsLabelPrefix string = toLower('${vmName}-${uniqueString(resourceGroup().id, vmName)}')
