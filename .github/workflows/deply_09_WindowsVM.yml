@@ -20,4 +20,5 @@ jobs:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.AZURE_RG }}
         template: ./09_WindowsVM.bicep
+        parameters: ./09_WindowsVM.bicepparam
         failOnStdErr: false
